@@ -1,0 +1,16 @@
+[
+  {
+    "file": "ca2_reviewed.fasta",
+    "url": "https://rest.uniprot.org/uniprotkb/stream?query=%28gene_exact%3ACA2%29+AND+%28reviewed%3Atrue%29+AND+%28taxonomy_id%3A7742%29&format=fasta",
+    "bytes": 2816,
+    "sha256": "3ce44c56e8122f2c814a714a0eda2215eb7acea9bce9aa43b92cb7cbb8e80950",
+    "retrieved_utc": "2026-10-24T14:13:29.358909+00:00"
+  },
+  {
+    "file": "3HS4.pdb",
+    "url": "https://files.rcsb.org/download/3HS4.pdb",
+    "bytes": 436185,
+    "sha256": "318c38f8cac9a06b3a42f9f9b1017421668f895621300b8d20abb3cdb254b6bb",
+    "retrieved_utc": "2026-10-24T14:13:29.359283+00:00"
+  }
+]

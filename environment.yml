@@ -1,0 +1,11 @@
+name: p29-pocket
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - mafft=7.526
+  - biopython=1.85
+  - numpy=2.2
+  - matplotlib=3.10
+  - pytest=8.3

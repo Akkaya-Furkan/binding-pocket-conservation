@@ -1,0 +1,28 @@
+name: analysis-ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          environment-file: environment.yml
+          activate-environment: p29-pocket
+          miniforge-version: latest
+          use-mamba: true
+      - run: pytest -q
+      - run: PYTHONPATH=src python -m pocket_conservation
+      - name: Verify scientific output matches committed result
+        run: python scripts/verify_results.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ca2-conservation-results
+          path: results/

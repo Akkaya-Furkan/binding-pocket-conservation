@@ -1,0 +1,32 @@
+{
+  "source_sequences": 8,
+  "unique_sequences": 8,
+  "source_species": 8,
+  "resolved_residues": 257,
+  "mapped_residues": 257,
+  "eligible_residues": 257,
+  "pocket_n": 13,
+  "nonpocket_n": 244,
+  "pocket_mean": 0.9903254638765614,
+  "nonpocket_mean": 0.8522215267900426,
+  "mean_difference": 0.1381039370865188,
+  "permutation_p_two_sided": 0.0025997400259974,
+  "permutations": 10000,
+  "seed": 29,
+  "cutoff_A": 5,
+  "coverage_threshold": 0.8,
+  "ligand": {
+    "name": "AZM",
+    "chain": "A",
+    "residue": 701,
+    "zinc_distance_A": 1.940169095993042
+  },
+  "versions": {
+    "python": "3.11.17",
+    "biopython": "1.85",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9",
+    "mafft": "v7.526 (2024/Apr/26)"
+  },
+  "mafft_command": "mafft --auto --thread 1 results/input.fasta"
+}
